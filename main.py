@@ -111,7 +111,6 @@ def evaluation(model, supervisor, num_label):
 
 
 def main(_):
-    print('LSTEST1')
     tf.logging.info(' Loading Graph...')
     num_label = 10
     model = CapsNet()
