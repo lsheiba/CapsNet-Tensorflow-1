@@ -75,5 +75,4 @@ if __name__ == '__main__':
     parser.add_argument("--save_to", default=save_to)
     parser.add_argument("--force", default=False, type=bool)
     args = parser.parse_args()
-    print(args.save_to)
     start_download(args.dataset, args.save_to, args.force)
