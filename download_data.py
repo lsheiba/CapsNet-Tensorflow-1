@@ -71,7 +71,7 @@ if __name__ == '__main__':
     import argparse
     parser = argparse.ArgumentParser('Script for automatically downloading datasets')
     parser.add_argument("--dataset", default='mnist', choices=['mnist', 'fashion-mnist', 'smallNORB'])
-    save_to = os.path.join('data', 'mnist')
+    save_to = os.path.join('../data', 'mnist')
     parser.add_argument("--save_to", default=save_to)
     parser.add_argument("--force", default=False, type=bool)
     args = parser.parse_args()
