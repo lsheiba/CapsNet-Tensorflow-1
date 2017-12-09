@@ -26,7 +26,7 @@ flags.DEFINE_float('regularization_scale', 0.392, 'regularization coefficient fo
 ############################
 #   environment setting    #
 ############################
-flags.DEFINE_string('dataset', os.environ['DATA_DIR']+os.sep+'mnist', 'The name of dataset [mnist, fashion-mnist')
+flags.DEFINE_string('dataset', 'mnist', 'The name of dataset [mnist, fashion-mnist')
 flags.DEFINE_boolean('is_training', True, 'train or predict phase')
 flags.DEFINE_integer('num_threads', 8, 'number of threads of enqueueing exampls')
 flags.DEFINE_string('logdir', os.environ['TRAINING_DIR'], 'logs directory')
