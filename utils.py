@@ -5,7 +5,7 @@ import tensorflow as tf
 
 
 def load_mnist(batch_size, is_training=True):
-    path = os.path.join('data', 'mnist')
+    path = os.path.join(os.environ['DATA_DIR'], 'mnist')
     if is_training:
         fd = open(os.path.join(path, 'train-images-idx3-ubyte'))
         loaded = np.fromfile(file=fd, dtype=np.uint8)
@@ -39,7 +39,7 @@ def load_mnist(batch_size, is_training=True):
 
 
 def load_fashion_mnist(batch_size, is_training=True):
-    path = os.path.join('data', 'fashion-mnist')
+    path = os.path.join(os.environ['DATA_DIR'], 'fashion-mnist')
     if is_training:
         fd = open(os.path.join(path, 'train-images-idx3-ubyte'))
         loaded = np.fromfile(file=fd, dtype=np.uint8)
